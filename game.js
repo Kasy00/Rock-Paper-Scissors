@@ -56,14 +56,28 @@ function game()
         let result = playRound(playerSelection, computerChoice);
 
         if(result == "computer")
+        {
+            alert("Computer won that round!");
             computerCounter++;
+        }
         else if(result == "player")
+        {    
+            alert("You won that round!");
             playerCounter++;
+        }
+        else
+            alert("Draw!");
     }
     if(computerCounter > playerCounter)
-        console.log("Computer has won!");
+        {
+            console.log("Computer has won!");
+            alert("Computer won");
+        }
     else
-        console.log("You won!");
+        {
+            console.log("You won!");
+            alert("You won");
+    }
 }
 
 game();
