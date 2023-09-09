@@ -1,3 +1,4 @@
+/*
 const arrChoices = ["rock", "paper", "scissors"];
 
 function getComputerChoice()
@@ -81,3 +82,4 @@ function game()
 }
 
 game();
+*/
