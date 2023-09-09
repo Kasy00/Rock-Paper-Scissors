@@ -7,7 +7,18 @@ body{
 }
 
 .container{
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container .card{
+    height: 70%;
+    width: 40%;
+    background-color: rgba(219, 198, 209, 0.8);
+    position: relative;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
 }
