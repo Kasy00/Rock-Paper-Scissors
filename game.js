@@ -1,3 +1,13 @@
+const startB = document.getElementById('start');
+const gameSection = document.getElementById('game-section');
+
+startB.addEventListener('click', () => {
+    startB.style.display = 'none';
+    gameSection.style.display = 'block';
+});
+
+
+
 /*
 const arrChoices = ["rock", "paper", "scissors"];
 

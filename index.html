@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="game.js"></script>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors!</h1>
-        <div class="card">
-            <button class="game">Start game</button>
-            <button class="game">Restart game</button>
+    <div class="first-section">
+        <div class="header">
+            <h1>Rock Paper Scissors!</h1>
+            <img src="/img/header-logo.jpg" alt="logo">
         </div>
     </div>
+    <div class="second-section">
+        <h2 class="description">You vs Computer to 5 points</h2>
+        <div class="buttons">
+            <button id="start">START GAME</button>
+
+            <div id="game-section" style="display: none;">
+                <h2>Choose your option:</h2>
+                <div class="options">
+                    <button id="rock" type="button">
+                        <img src="img/rock.svg" alt="option-rock">
+                    </button>
+                    <button id="paper" type="button">
+                        <img src="img/paper.svg" alt="option-paper">
+                    </button>
+                    <button id="scissors" type="button">
+                        <img src="img/scissors.svg" alt="option-scissors">
+                    </button>
+                </div>
+                <div class="result">
+                    <p id="playerScore">Player</p>
+                    <p id="computerScore">Computer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
+<script src="game.js"></script>
 </html>
