@@ -81,6 +81,10 @@ body{
     transform: translate(0.4rem, 0.4rem);
 }
 
+.result {
+    text-align: center;
+}
+
 h2{
     font-weight: bold;
     font-size: 1.5rem;
@@ -119,11 +123,10 @@ button img{
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
-    display: flex;
     justify-content: space-between;
-    background-color: red;
     margin-top: 20px;
     width: 450px;
     padding: 9px;
     font-family: 'Press Start 2P', cursive;
+    margin-left: 60px;
 }

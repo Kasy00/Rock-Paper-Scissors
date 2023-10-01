@@ -1,14 +1,34 @@
 const startB = document.getElementById('start');
 const gameSection = document.getElementById('game-section');
+const rock = document.getElementById('rock');
+const paper = document.getElementById('paper');
+const scissors = document.getElementById('scissors');
+let playerSelection = "";
+let computerChoice = "";
 
 startB.addEventListener('click', () => {
     startB.style.display = 'none';
     gameSection.style.display = 'block';
 });
 
+rock.addEventListener('click', () => {
+    playerSelection = "rock";
+    computerChoice = getComputerChoice();
+    playRound(playerSelection, computerChoice);
+});
 
+paper.addEventListener('click', () => {
+    playerSelection = "paper";
+    computerChoice = getComputerChoice();
+    playRound(playerSelection, computerChoice);
+});
 
-/*
+scissors.addEventListener('click', () => {
+    playerSelection = "scissors";
+    computerChoice = getComputerChoice();
+    playRound(playerSelection, computerChoice);
+});
+
 const arrChoices = ["rock", "paper", "scissors"];
 
 function getComputerChoice()
@@ -17,9 +37,7 @@ function getComputerChoice()
     return computerChoice;
 }
 
-function playRound(playerSelection, computerChoice)
-{
-    playerSelection = playerSelection.toLowerCase();
+function playRound(playerSelection, computerChoice){
     if(playerSelection == "rock" && computerChoice == "paper")
     {
         console.log("You Lose! Paper beats Rock!");
@@ -55,41 +73,3 @@ function playRound(playerSelection, computerChoice)
         console.log("It's a draw!");
     }
 }
-
-function game()
-{
-    let computerCounter = 0,
-        playerCounter = 0;
-    for(let i = 0; i < 5; i++)
-    {
-        let computerChoice = getComputerChoice();
-        let playerSelection = prompt("Enter your choice: ");
-        let result = playRound(playerSelection, computerChoice);
-
-        if(result == "computer")
-        {
-            alert("Computer won that round!");
-            computerCounter++;
-        }
-        else if(result == "player")
-        {    
-            alert("You won that round!");
-            playerCounter++;
-        }
-        else
-            alert("Draw!");
-    }
-    if(computerCounter > playerCounter)
-        {
-            console.log("Computer has won!");
-            alert("Computer won");
-        }
-    else
-        {
-            console.log("You won!");
-            alert("You won");
-    }
-}
-
-game();
-*/
