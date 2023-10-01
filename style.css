@@ -69,7 +69,7 @@ body{
     background-repeat: repeat;
     background-size: 200%;
     box-shadow: 0.4rem 0.4rem 0 black;
-    transition: all 0.3s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ body{
     transform: translate(0.4rem, 0.4rem);
 }
 
-.result {
+.result{
     text-align: center;
 }
 
@@ -112,10 +112,9 @@ button img{
 }
 
 #rock:hover, #paper:hover, #scissors:hover{
-    -webkit-box-shadow: -1px -28px 33px -16px rgba(48, 42, 42, 0.9);
-    -moz-box-shadow: -1px -28px 33px -16px rgba(48, 42, 42, 0.9);
-    box-shadow: -1px -28px 33px -16px rgba(48, 42, 42, 0.9);
-
+    -webkit-box-shadow: 0px 0px 51px 13px rgba(245, 235, 9, 1);
+    -moz-box-shadow: 0px 0px 51px 13px rgba(245, 235, 9, 1);
+    box-shadow: 0px 0px 51px 13px rgba(245, 235, 9, 1);
     cursor: pointer;
 }
 
@@ -129,4 +128,12 @@ button img{
     padding: 9px;
     font-family: 'Press Start 2P', cursive;
     margin-left: 60px;
+    display: flex;
+}
+
+.player, .computer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
