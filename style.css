@@ -43,6 +43,27 @@ body{
     margin-top: 0;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.lastPick{
+    border: 2px solid #fff;
+    background-color: rgba(178, 237, 59, 0.8);
+    padding: 12px;
+    width: 150px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#playerPick, #computerPick{
+    color: black;
+    font-weight: bold;
+}
+
 .buttons{
     background-color: rgba(178, 237, 59, 0.8);
     padding: 5px 20px;

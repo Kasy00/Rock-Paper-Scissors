@@ -19,32 +19,42 @@
     </div>
     <div class="second-section">
         <h2 class="description">You vs Computer to 5 points</h2>
-        <div class="buttons">
-            <button id="start">START GAME</button>
-
-            <div id="game-section" style="display: none;">
-                <h2>Choose your option:</h2>
-                <div class="options">
-                    <button id="rock" type="button">
-                        <img src="img/rock.svg" alt="option-rock">
-                    </button>
-                    <button id="paper" type="button">
-                        <img src="img/paper.svg" alt="option-paper">
-                    </button>
-                    <button id="scissors" type="button">
-                        <img src="img/scissors.svg" alt="option-scissors">
-                    </button>
-                </div>
-                <div class="result">
-                    <div class="player">
-                        <p>Player: </p>
-                        <p id="playerScore"></p>
+        <div class="content">
+            <div class="lastPick" id="playerPicked" style="display: none;">
+                YOU PICKED
+                <p id="playerPick"></p>
+            </div>
+            <div class="buttons">
+                <button id="start">START GAME</button>
+        
+                <div id="game-section" style="display: none;">
+                    <h2>Choose your option:</h2>
+                    <div class="options">
+                        <button id="rock" type="button">
+                            <img src="img/rock.svg" alt="option-rock">
+                        </button>
+                        <button id="paper" type="button">
+                            <img src="img/paper.svg" alt="option-paper">
+                        </button>
+                        <button id="scissors" type="button">
+                            <img src="img/scissors.svg" alt="option-scissors">
+                        </button>
                     </div>
-                    <div class="computer">
-                        <p>Computer: </p>
-                        <p id="computerScore"></p>
-                    </div>           
+                    <div class="result">
+                        <div class="player">
+                            <p>Player: </p>
+                            <p id="playerScore"></p>
+                        </div>
+                        <div class="computer">
+                            <p>Computer: </p>
+                            <p id="computerScore"></p>
+                        </div>           
+                    </div>
                 </div>
+            </div>
+            <div class="lastPick" id="computerPicked" style="display: none;">
+                COMPUTER PICKED
+                <p id="computerPick"></p>
             </div>
         </div>
     </div>
