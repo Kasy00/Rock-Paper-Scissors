@@ -167,4 +167,5 @@ button img{
     justify-content: center;
     border-top: 2px solid white;
     font-family: 'Press Start 2P', cursive;
+    gap: 10px;
 }
